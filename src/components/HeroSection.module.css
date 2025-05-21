@@ -1,0 +1,79 @@
+.hero,
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 60vh;
+  padding-left: 4.5rem;
+  background-image: radial-gradient(
+      circle at 92% 37%,
+      hsla(94, 0%, 12%, 0.07) 0%,
+      hsla(94, 0%, 12%, 0.07) 39%,
+      transparent 39%,
+      transparent 71%,
+      transparent 71%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 65% 60%,
+      hsla(94, 0%, 12%, 0.07) 0%,
+      hsla(94, 0%, 12%, 0.07) 15%,
+      transparent 15%,
+      transparent 67%,
+      transparent 67%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 18% 57%,
+      hsla(94, 0%, 12%, 0.07) 0%,
+      hsla(94, 0%, 12%, 0.07) 23%,
+      transparent 23%,
+      transparent 31%,
+      transparent 31%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 38% 0%,
+      hsla(94, 0%, 12%, 0.07) 0%,
+      hsla(94, 0%, 12%, 0.07) 27%,
+      transparent 27%,
+      transparent 60%,
+      transparent 60%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 83% 39%,
+      hsla(94, 0%, 12%, 0.07) 0%,
+      hsla(94, 0%, 12%, 0.07) 74%,
+      transparent 74%,
+      transparent 87%,
+      transparent 87%,
+      transparent 100%
+    ),
+    linear-gradient(135deg, var(--bg-300), var(--bg-100));
+}
+
+.heroContainer {
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.title {
+  max-width: 600px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-wrap: balance;
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+@media (max-width: 425px) {
+  .heroImageContainer {
+    display: none;
+  }
+}

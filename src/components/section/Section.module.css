@@ -1,0 +1,35 @@
+.section {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  text-wrap: balance;
+}
+
+.sectionCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pasosSection {
+  /*todo*/
+}
+
+.productoSection {
+  /*todo*/
+  background-color: var(--bg-300);
+}
+.recompensaSection {
+  background-color: var(--bg-200);
+}
+.recompensaCard {
+  border: 2px solid var(--text-100);
+}

@@ -1,0 +1,35 @@
+.btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 99rem;
+  cursor: pointer;
+  background-color: var(--accent-100);
+  border: none;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+
+  .cardNumber {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--bg-400);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-300);
+  }
+
+  .cardTitle {
+   font-size: clamp(1rem, 0.5714rem + 2.2857vw, 1.5rem);
+  }
+
+  .cardDescription {
+    font-size: clamp(0.625rem, -4.625rem + 28vw, 1.15rem);
+    max-width: 350px;
+  }
+}

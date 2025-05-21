@@ -1,0 +1,33 @@
+:root {
+  --primary-100: #c3a86b;
+  --primary-200: #006241;
+  --accent-100: #b6ccd8;
+  --accent-200: #71c4ef;
+  --accent-300: #00668c;
+  --text-100: #2c1810;
+  --text-200: #313d44;
+  --text-300: #f3f4f6;
+  --bg-100: #f5f1e9;
+  --bg-200: #f5e6d3;
+  --bg-300: #8b6e4e;
+  --bg-400: #4a3c31;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
