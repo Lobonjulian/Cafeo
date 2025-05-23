@@ -5,8 +5,9 @@
 }
 
 .header {
-  padding: 0.5rem 2rem;
+  padding-inline: 2rem;
   justify-content: space-between;
+  position: relative;
 }
 
 .headerContainer {
@@ -15,10 +16,22 @@
   .navList {
     gap: 0.75rem;
   }
+
   .active {
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid var(--bg-300);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--bg-400);
+    font-weight: bold;
     color: var(--bg-400);
+  }
+
+  .linkDescription {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    background-color: var(--bg-400);
+    color: var(--bg-100);
   }
 }
 
@@ -29,6 +42,11 @@
     background-color: transparent;
     color: var(--text-200);
     border: none;
+    &:hover {
+      border: var(--bg-400) 1px solid;
+      color: var(--bg-300);
+      padding: 0.5rem;
+    }
   }
 }
 
@@ -56,6 +74,7 @@
     }
   }
 }
+
 .footerCopyright {
   padding-top: 1rem;
   border-top: 1px solid var(--bg-300);
@@ -68,5 +87,16 @@
     span {
       color: var(--bg-300);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .flex,
+  .footerContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .linkDescription {
+    display: none;
   }
 }

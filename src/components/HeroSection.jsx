@@ -1,6 +1,6 @@
 import Button from "./Common/Button";
 import styles from "./HeroSection.module.css";
-import taza from "../assets/TazaCapuchino.png";
+import taza from "../assets/TazaCapuchino.avif";
 
 const HeroSection = () => {
   return (
